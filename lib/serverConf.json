@@ -1,0 +1,7 @@
+{
+  "SERVER_ADDRESS": "http://infoap-des.pae.serpro",
+  "AUTH": {
+    "login": "alan",
+    "password": "senha"
+  }
+}

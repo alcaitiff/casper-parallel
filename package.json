@@ -1,0 +1,21 @@
+{
+  "name": "casper-suit",
+  "version": "1.0.0",
+  "description": "Generate basic structure for modular tests",
+  "main": "casper-suit.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "casperjs",
+    "test"
+  ],
+  "author": "Alan Rabello",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "fs": "0.0.2",
+    "fs-tools": "^0.2.11",
+    "mkdirp": "^0.5.1"
+  }
+}
