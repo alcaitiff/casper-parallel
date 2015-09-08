@@ -92,3 +92,6 @@ function createTestCaseFiles() {
     }
   );
 }
+exports.createProject = function() {
+  createDir();
+};
