@@ -1,7 +1,7 @@
 {
-  "SERVER_ADDRESS": "http://infoap-des.pae.serpro",
+  "SERVER_ADDRESS": "https://www.npmjs.com/package/casper-suit",
   "AUTH": {
-    "login": "alan",
-    "password": "senha"
+    "login": "mylogin",
+    "password": "mypassword"
   }
 }

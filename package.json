@@ -1,6 +1,6 @@
 {
   "name": "casper-suit",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "Generate basic structure for modular tests",
   "main": "casper-suit.js",
   "scripts": {
@@ -9,6 +9,16 @@
   "keywords": [
     "casperjs",
     "test"
+  ],
+  "files": [
+    "casper-suit.js",
+    "lib/conf.js",
+    "lib/lib.js",
+    "lib/map.js",
+    "lib/myfirsttest.js",
+    "lib/screenshot.js",
+    "lib/run.sh",
+    "lib/serverConf.json"
   ],
   "author": "Alan Rabello",
   "license": "MIT",
