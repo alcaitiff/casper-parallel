@@ -1,6 +1,6 @@
 {
   "name": "casper-suit",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Generate basic structure for modular tests",
   "main": "casper-suit.js",
   "scripts": {
@@ -23,7 +23,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://https://github.com/alcaitiff/casper-suit.git"
+    "url": "git://github.com/alcaitiff/casper-suit.git"
   },
   "readmeFilename": "README.md",
   "author": "Alan Rabello",
