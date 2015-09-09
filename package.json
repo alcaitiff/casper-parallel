@@ -1,6 +1,6 @@
 {
   "name": "casper-suit",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Generate basic structure for modular tests",
   "main": "casper-suit.js",
   "scripts": {
