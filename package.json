@@ -12,6 +12,7 @@
   ],
   "files": [
     "casper-suit.js",
+    "README.md",
     "lib/conf.js",
     "lib/lib.js",
     "lib/map.js",
