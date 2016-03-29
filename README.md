@@ -1,4 +1,4 @@
-casper-suit
+casper-parallel
 ==========
 
 Run it or import it and call createProject();
@@ -7,7 +7,7 @@ Ex:
 
 $ node casper-parallel/generate.js
 
-This code will create a directory called casper-suit for your tests. Inside it will put some basic files like a casper script to save screenshots, a casper configuration file, a server configuration file for multiple servers, a lib with some helpful functions and a node script called run.js.
+This code will create a directory called casper-parallel for your tests. Inside it will put some basic files like a casper script to save screenshots, a casper configuration file, a server configuration file for multiple servers, a lib with some helpful functions and a node script called run.js.
 
 The run.js file need a list of directories as parameter and will start a group of tests inside this directories in parallel using subproccess.
 
