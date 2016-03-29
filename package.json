@@ -1,29 +1,31 @@
 {
-  "name": "casper-suit",
-  "version": "1.0.15",
-  "description": "Generate basic structure for modular tests",
-  "main": "casper-suit.js",
+  "name": "casper-parallel",
+  "version": "1.0.19",
+  "description": "Generate basic structure for modular casperjs tests running in parallel",
+  "main": "generate.js",
   "scripts": {
     "test": "test"
   },
   "keywords": [
     "casperjs",
-    "test"
+    "test",
+    "parallel"
   ],
   "files": [
-    "casper-suit.js",
+    "generate.js",
     "README.md",
     "lib/conf.js",
     "lib/lib.js",
     "lib/map.js",
     "lib/myfirsttest.js",
+    "lib/myfirsttestfail.js",
     "lib/screenshot.js",
-    "lib/run.sh",
-    "lib/serverConf.json"
+    "lib/run.js",
+    "lib/serverConf.js"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/alcaitiff/casper-suit.git"
+    "url": "git://github.com/alcaitiff/casper-parallel.git"
   },
   "readmeFilename": "README.md",
   "author": "Alan Rabello",
