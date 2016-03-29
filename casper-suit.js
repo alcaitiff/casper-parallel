@@ -6,6 +6,9 @@ var mkdirp = require('mkdirp');
 var testCaseName = 'MyFirstTestCase';
 var path = require('path');
 var lib = path.resolve(__dirname, 'lib');
+var modules = path.resolve(__dirname, 'node_modules');
+var ncp = require('ncp').ncp;
+
 console.log('Installing casper-suit'.blue.bold);
 createDir();
 
@@ -29,11 +32,25 @@ function createFiles() {
   createServerConf();
   createFunctions();
   createTestCase();
+  copyModules();
+}
+
+function copyModules() {
+  console.log('Creating Modules');
+  ncp(modules, 'casper-suit/node_modules',
+    function(err) {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log('Modules created'.green);
+      }
+    }
+  );
 }
 
 function createRunner() {
   console.log('Creating the runner');
-  fs.copy(lib + '/run.sh', 'casper-suit/run.sh',
+  fs.copy(lib + '/run.js', 'casper-suit/run.js',
     function(err) {
       if (err) {
         console.error(err);
@@ -46,7 +63,7 @@ function createRunner() {
 
 function createServerConf() {
   console.log('Creating the server configuration file');
-  fs.copy(lib + '/serverConf.json', 'casper-suit/serverConf.json',
+  fs.copy(lib + '/serverConf.js', 'casper-suit/serverConf.js',
     function() {
       console.log('Server configuration file created'.green);
     }
@@ -92,7 +109,14 @@ function createTestCaseFiles() {
       console.log('Map file created'.green);
     }
   );
-  fs.copy(lib + '/myfirsttest.js', 'casper-suit/' + testCaseName + '/myfirsttest.js',
+  fs.copy(lib + '/myfirsttestfail.js', 'casper-suit/' + testCaseName +
+    '/myfirsttestfail.js',
+    function() {
+      console.log('Test fail file created'.green);
+    }
+  );
+  fs.copy(lib + '/myfirsttest.js', 'casper-suit/' + testCaseName +
+    '/myfirsttest.js',
     function() {
       console.log('Test file created'.green);
     }

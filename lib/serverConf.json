@@ -1,7 +1,0 @@
-{
-  "SERVER_ADDRESS": "https://www.npmjs.com/package/casper-suit",
-  "AUTH": {
-    "login": "mylogin",
-    "password": "mypassword"
-  }
-}

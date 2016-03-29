@@ -3,14 +3,14 @@ casper-suit
 
 Run it or import it and call createProject();
 
-This code will create a directory called casper-suit for your tests. Inside it will put some basic files like a casper script to save screenshots, a casper configuration file, a server configuration file, a lib with some helpful functions and a shell script called run.sh.
+This code will create a directory called casper-suit for your tests. Inside it will put some basic files like a casper script to save screenshots, a casper configuration file, a server configuration file for multiple servers, a lib with some helpful functions and a node script called run.js.
 
-The run.sh file will accept a list of directories as parameter and will start a group of tests inside this directories in parallel using subproccess.
+The run.js file need a list of directories as parameter and will start a group of tests inside this directories in parallel using subproccess.
 
 Ex:
-$ ./run.sh testDir1 testDir2
+$ ./run.js testDir1 testDir2
 or
-$ ./run.sh testDir*
+$ ./run.js testDir*
 
 This will create a folder for each test directory in your tmp, and will put all logs there.
 
