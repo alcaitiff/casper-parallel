@@ -12,6 +12,8 @@ This code will create a directory called casper-suit for your tests. Inside it w
 The run.js file need a list of directories as parameter and will start a group of tests inside this directories in parallel using subproccess.
 
 Ex:
+$ ./run.js MyFirstTestCase
+or
 $ ./run.js testDir1 testDir2
 or
 $ ./run.js testDir*
