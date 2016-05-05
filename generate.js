@@ -7,7 +7,7 @@ mkdirp = require("mkdirp");
 testCaseName = "MyFirstTestCase";
 path = require("path");
 lib = path.resolve(__dirname, "lib");
-modules = path.resolve(__dirname, "node_modules");
+modules = path.resolve(__dirname, "../../node_modules");
 ncp = require("ncp").ncp;
 
 console.log("Installing casper-parallel".blue.bold);
