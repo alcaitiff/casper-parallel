@@ -1,6 +1,6 @@
 {
   "name": "casper-parallel",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Generate basic structure for modular casperjs tests running in parallel",
   "main": "generate.js",
   "scripts": {
